@@ -30,7 +30,6 @@ void main() {
   print('Smallest: ${number.first}');
   print('Greatest: ${number.last}');
 
-
   //Q-5
   List intList = [22, 12, 33, 24, 30];
   var maxValue = intList.reduce((a, b) => a > b ? a : b);
@@ -42,4 +41,30 @@ void main() {
   List newList = List.from(oldList.reversed);
   print('New List: $newList');
   print('Old List: $oldList');
+
+  // Q-8
+  List<String> usersEligibility = [
+    'John',
+    'Alice',
+    'eligible',
+    'Mike',
+    'Sarah',
+    'Tom',
+  ];
+  usersEligibility.removeWhere((user) => user != 'Mike');
+
+  print(usersEligibility);
+
+  List<String> usersEligibility1 = [
+    'John',
+    'Alice',
+    'eligible',
+    'Mike',
+    'Sarah',
+    'Tom',
+  ];
+
+  usersEligibility1.retainWhere((user) => user == 'Mike');
+
+  print(usersEligibility1);
 }
