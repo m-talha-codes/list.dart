@@ -1,16 +1,15 @@
 void main() {
-  int mark = 33;
-  if (mark >= 80) {
-    print("A+");
-  } else if (mark >= 70) {
-    print("A");
-  } else if (mark >= 60) {
-    print("B");
-  } else if (mark >= 50) {
-    print("C");
-  } else if (mark >= 40) {
-    print("D");
-  } else {
-    print("F");
-  }
-}
+  int abc = 43;
+  int a = 21;
+  int q = 12;
+  int k = 8;
+  int i = a - q; //9
+  bool w = abc > a && !(a < abc); //false
+  bool e = !w || q != k; // True
+  bool o = e && i > 4; //true
+    print(w);
+    print(e);
+    print(o);
+    print(!(!o || e));
+ 
+} 

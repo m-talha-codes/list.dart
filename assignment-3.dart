@@ -42,6 +42,14 @@ void main() {
   print('New List: $newList');
   print('Old List: $oldList');
 
+  // Q-7
+  List<int> numbers = [10, -5, 20, -8, 0, 15, -3];
+
+  List<int> positiveNumbers = numbers.where((n) => n >= 0).toList();
+
+  print('Original List: $numbers');
+  print('Positive Numbers: $positiveNumbers');
+
   // Q-8
   List<String> usersEligibility = [
     'John',
@@ -51,7 +59,7 @@ void main() {
     'Sarah',
     'Tom',
   ];
-  usersEligibility.removeWhere((user) => user != 'Mike');
+  usersEligibility.removeWhere((user) => user != 'eligible');
 
   print(usersEligibility);
 
@@ -64,7 +72,7 @@ void main() {
     'Tom',
   ];
 
-  usersEligibility1.retainWhere((user) => user == 'Mike');
+  usersEligibility1.retainWhere((user) => user == 'eligible');
 
   print(usersEligibility1);
 }
