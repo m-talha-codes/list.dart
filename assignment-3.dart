@@ -58,13 +58,14 @@ void main() {
     'Mike',
     'Sarah',
     'Tom',
+    'eligible',
   ];
   usersEligibility.removeWhere((user) => user != 'eligible');
 
   print(usersEligibility);
 
   List<String> usersEligibility1 = [
-    'John',
+    'John', 
     'Alice',
     'eligible',
     'Mike',
