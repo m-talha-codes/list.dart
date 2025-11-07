@@ -67,12 +67,6 @@ void main() {
     print('Not eligible');
   }
 
-  // List<Map<String, dynamic>> friendList = [
-  //   {'name': 'Talha', 'result': 'pass'},
-  //   {'name': 'Ahad', 'result': 'fail'},
-  //   ];
-  //   print(friendList[0]['name']);
-
     //Q-9
     Map<String, dynamic> product = {
     'name': 'Laptop',
@@ -85,5 +79,65 @@ void main() {
   } else {
     print('Out of stock');
   }
+
+  //Q-10
+    Map<String, dynamic> car = {
+    'brand': 'Toyota',
+    'color': 'Red',
+    'isSedan': true
+  };
+
+  if (car['isSedan'] == true && car['color'] == 'Red') {
+    print('Match');
+  } else {
+    print('No match');
+  }
+
+  //Q-11
+    Map<String, dynamic> user = {
+    'name': 'Talha',
+    'isAdmin': true,
+    'isActive': true
+  };
+
+  if (user['isAdmin'] == true && user['isActive'] == true) {
+    print('Active admin');
+  } else {
+    print('Not an active admin');
+  }
+
+  //Q-12
+    Map<String, int> cart = {
+    'Apple': 4,
+    'Banana': 6,
+    'Orange': 3
+  };
+
+  if (cart.containsKey('Apple')) {
+    print('Product found');
+  } else {
+    print('Product not found');
+  }
+  
+  //Q-13
+  bool x = true;
+  bool y = false;
+
+  if (x && y) {
+    print("Both are true");
+  } else {
+    print("At least one is false");
+  }
+
+  //Q-14
+  int num0 = 5;
+  num0++;
+  print(num0);
+
+  //Q-15
+ // a = a + 1 -- increments a, then returns the new value of a.
+ // a++ ;    --  returns the old value of a, then increments a.
+
+
 }
  
