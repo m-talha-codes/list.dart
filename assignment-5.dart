@@ -1,6 +1,7 @@
+import 'dart:io';
 void main(){
 
-  //Q-1 
+  //Q-1
   var n = 10;
   int first = 0;
   int second = 1;
@@ -20,4 +21,19 @@ void main(){
     }
   }
   print("Largest: $largest");
+
+  //Q-3
+  int num = 6;
+  for (int i = 1; i <= 10; i++) {
+    print("$num x $i = ${num * i}");
+  }
+
+  //Q-5
+  int numb = int.parse(stdin.readLineSync()!);
+  for (int i = 1; i <= numb; i++) {
+    for (int j = 1; j <= i; j++) {
+      stdout.write(i);
+    }
+    print("");
+  }
 }
