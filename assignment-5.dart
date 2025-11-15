@@ -27,6 +27,21 @@ void main(){
   for (int i = 1; i <= 10; i++) {
     print("$num x $i = ${num * i}");
   }
+  
+  //Q-4
+  String str = "radar";
+  String reversed = "";
+
+  for (int i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+
+  if (str == reversed) {
+    print('"$str" is a palindrome.');
+  } else {
+    print('"$str" is not a palindrome.');
+  }
+
 
   //Q-5
   int numb = int.parse(stdin.readLineSync()!);
@@ -37,8 +52,16 @@ void main(){
     print("");
   }
 
+  //Q-6
+  List<int> numbers = [2, 8, 4, 10, 3, 7];
 
-
+  for (int i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 5) {
+      print(numbers[i]);
+    } else {
+      print("Less than 5");
+    }
+    
   //Q-7
   stdout.write("Enter a string: ");
   String alpha = stdin.readLineSync()!;
@@ -66,4 +89,5 @@ void main(){
   }
 
   print("Number of vowels: $vowelCount");
+}
 }
