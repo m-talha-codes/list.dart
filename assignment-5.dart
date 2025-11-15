@@ -36,4 +36,34 @@ void main(){
     }
     print("");
   }
+
+
+
+  //Q-7
+  stdout.write("Enter a string: ");
+  String alpha = stdin.readLineSync()!;
+
+  int vowelCount = 0;
+
+  for (int i = 0; i < alpha.length; i++) {
+    String a = alpha[i];
+
+    if (a == 'a') {
+      vowelCount++;
+    }
+    else if (a == 'e') {
+      vowelCount++;
+    }
+    else if (a == 'i') {
+      vowelCount++;
+    }
+    else if (a == 'o') {
+      vowelCount++;
+    }
+    else if (a == 'u') {
+      vowelCount++;
+    }
+  }
+
+  print("Number of vowels: $vowelCount");
 }
